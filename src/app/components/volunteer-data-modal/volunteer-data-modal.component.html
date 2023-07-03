@@ -1,0 +1,31 @@
+<div class="modal m-20">
+  <div class="mat-display-flex">
+    <div class="subtitle">BE PART OF US</div>
+    <mat-icon class="close-icon" (click)="closeModal()">close</mat-icon>
+  </div>
+  <form action="">
+    <div class="mat-display-flex">
+      <app-pet-input label="Full Name" [minLength]="3" [maxLength]="30"></app-pet-input>
+      <app-pet-input label="Name"></app-pet-input>
+    </div>
+    <div class="mat-display-flex">
+      <app-pet-input label="E-mail"></app-pet-input>
+      <app-pet-input label="Contact"></app-pet-input>
+    </div>
+    <div class="mat-display-flex">
+      <app-pet-input label="Adress"></app-pet-input>
+      <div class="volunteer">
+        <div class="body-text fs-15">Volunteer Type</div>
+      <select  class="body-text fs-20">
+        <option value="presential-volunteer">Presential Volunteer</option>
+        <option value="medial-volunteer">Medial Volunteer</option>
+      </select>
+      </div>
+    </div>
+  </form>
+  <app-continue-button
+    [text]="text"
+    class="full-width"
+    (click)="closeModal()"
+  ></app-continue-button>
+</div>

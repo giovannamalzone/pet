@@ -1,0 +1,22 @@
+button {
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 40px;
+  padding-inline: 20px;
+  color: white;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.enabled {
+  background-color: #9d62ee;
+}

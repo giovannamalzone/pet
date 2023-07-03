@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+*, *:after, *:before { box-sizing: border-box; }
+
+body{
+  background-color: #f9f4ea;
+}
+
+//TEXT
+.title{
+  font-family: 'Bagel Fat One', cursive;
+  font-size: 120px;
+}
+
+.subtitle{
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #9d62ee;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.body-text{
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+}
+
+$fontSizes: 10, 15, 20, 25, 35;
+
+@each $size in $fontSizes {
+  .fs-#{$size} {
+    font-size: #{$size}px !important;
+    &::placeholder {
+      font-size: #{$size}px !important;
+    }
+  }
+}
+
+.justify-text{
+  text-align: justify;
+}
+
+//ALIGN
+.mat-display-flex {
+  display: flex;
+}
+
+.m-20{
+  margin: 20px;
+}
+
+//OTHERS
+.cursor-pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<div class="mat-display-flex toolbar">
+  <div routerLink="" class="cursor-pointer">
+    <div class="mat-display-flex margin">
+      <div class="title fs-35">Pet</div>
+      <img src="/assets/pf.png" alt="" />
+    </div>
+    <div class="title fs-35">foster</div>
+  </div>
+
+  <div class="mat-display-flex options">
+    <div routerLink="" [ngClass]="{ selected: isSelected('') }" class="cursor-pointer">Home</div>
+    <div routerLink="/about" [ngClass]="{ selected: isSelected('/about') }" class="cursor-pointer">
+      About
+    </div>
+    <div routerLink="/adopt" [ngClass]="{ selected: isSelected('/adopt') }" class="cursor-pointer">
+      Adopt
+    </div>
+    <div routerLink="/help-us" [ngClass]="{ selected: isSelected('/help-us') }" class="cursor-pointer">
+      Help Us
+    </div>
+  </div>
+
+  <app-pet-button [text]="text" (click)="openModal()"></app-pet-button>
+</div>
+
+<hr />

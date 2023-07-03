@@ -1,0 +1,29 @@
+.modal{
+  width: 950px;
+}
+
+.subtitle{
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.mat-display-flex{
+  width: 100%;
+  justify-content: space-between;
+  app-pet-input{
+    width: 48%;
+  }
+}
+
+.volunteer{
+  width: 48%;
+}
+
+select{
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid;
+}

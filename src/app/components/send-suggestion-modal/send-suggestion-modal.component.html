@@ -1,0 +1,15 @@
+<div class="modal m-20">
+  <div class="subtitle">DESCRIBE YOUR IDEA</div>
+  
+  <div class="textarea-container">
+    <textarea
+      [(ngModel)]="ideaDescription"
+      (input)="onInputChange()"
+      class="body-text"
+      [maxlength]="maxLength"
+      [minlength]="minLength"
+    ></textarea>
+    <span class="char-count body-text fs-15">{{ remainingChars }}/{{ maxLength }}</span>
+  </div>
+  <app-continue-button [text]="text" class="full-width" [disableButton]="disableButton()" (click)="closeModal()"></app-continue-button>
+</div>

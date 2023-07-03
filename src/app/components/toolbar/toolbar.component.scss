@@ -1,0 +1,30 @@
+.toolbar {
+  height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 20px;
+}
+
+img {
+  height: 25px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.options {
+  font-family: "Lato", sans-serif;
+  justify-content: space-around;
+  width: 40%;
+  align-items: center;
+}
+
+.selected {
+  background-color: #9d62ee;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.margin {
+  margin-bottom: -20px;
+}
